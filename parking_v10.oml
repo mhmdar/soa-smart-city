@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OCR VER="2.0" MAXID="457">
+<OCR VER="2.0" MAXID="561">
   <PROCS>
     <PROC OID="Process28" NAME="Test_driverPreferences" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
@@ -59,82 +59,6 @@
                   <BOXES />
                 </RBOX>
                 <RBOX OID="RefBox179" X="314.0" Y="176.0" DX="0.0" DY="0.0" REF="OutboxParameter164" REFTYPE="4">
-                  <BOXES />
-                </RBOX>
-              </BOXES>
-            </RBOX>
-          </BOXES>
-          <GROUPS />
-        </VIEW>
-      </VIEWS>
-    </PROC>
-    <PROC OID="Process74" NAME="Test_getLotsInRange" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
-      <INBOX>
-        <PARAM OID="InboxParameter79" NAME="currentLocation" DESC="" TYPE="String" />
-        <PARAM OID="InboxParameter80" NAME="radius" DESC="" TYPE="int">1000</PARAM>
-      </INBOX>
-      <OUTBOX>
-        <PARAM OID="OutboxParameter81" NAME="listOfNearbyLots" DESC="" TYPE="String[]" />
-      </OUTBOX>
-      <TASKS>
-        <ACTIVITY OID="Activity82" NAME="getLotsInRange" DESC="" ACT="" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program47" />
-      </TASKS>
-      <DATAFLOW>
-        <BIND OID="Binding91" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter80" DESTPID="InboxParameter49" DESTTID="Activity82" ACTION="0" />
-        <BIND OID="Binding93" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter79" DESTPID="InboxParameter48" DESTTID="Activity82" ACTION="0" />
-        <BIND OID="Binding95" SRCTYP="0" DESTTYP="3" SRCPID="OutboxParameter50" DESTPID="OutboxParameter81" SRCTID="Activity82" ACTION="0" />
-        <BIND OID="Binding186" SRCTYP="1" DESTTYP="4" SRCPID="OutboxParameter69" DESTPID="system.OUTBOX_REST_RESPONSE" SRCTID="Activity82" ACTION="0" />
-      </DATAFLOW>
-      <VIEWS>
-        <VIEW OID="View75" NAME="ControlFlow" DESC="" VTYPE="0">
-          <ARROWS />
-          <BOXES>
-            <RBOX OID="RefBox84" X="0.0" Y="50.0" DX="0.0" DY="0.0" REF="Activity82" REFTYPE="0">
-              <BOXES />
-            </RBOX>
-          </BOXES>
-          <GROUPS />
-        </VIEW>
-        <VIEW OID="View76" NAME="DataFlow" DESC="" VTYPE="1">
-          <ARROWS>
-            <ARROW OID="Arrow92" SOURCE="RefBox85" DESTINATION="RefBox89" REF="Binding91" REFTYPE="1" ROUTE="2" />
-            <ARROW OID="Arrow94" SOURCE="RefBox86" DESTINATION="RefBox88" REF="Binding93" REFTYPE="1" ROUTE="2" />
-            <ARROW OID="Arrow96" SOURCE="RefBox90" DESTINATION="RefBox87" REF="Binding95" REFTYPE="1" ROUTE="2" />
-            <ARROW OID="Arrow187" SOURCE="RefBox184" DESTINATION="RefBox185" REF="Binding186" REFTYPE="1" ROUTE="2" />
-          </ARROWS>
-          <BOXES>
-            <RBOX OID="RefBox77" X="250.0" Y="0.0" DX="0.0" DY="0.0" REF="Process74" REFTYPE="5">
-              <BOXES>
-                <RBOX OID="RefBox85" X="339.0" Y="47.0" DX="0.0" DY="0.0" REF="InboxParameter80" REFTYPE="3">
-                  <BOXES />
-                </RBOX>
-                <RBOX OID="RefBox86" X="217.0" Y="51.0" DX="0.0" DY="0.0" REF="InboxParameter79" REFTYPE="3">
-                  <BOXES />
-                </RBOX>
-              </BOXES>
-            </RBOX>
-            <RBOX OID="RefBox78" X="287.0" Y="374.0" DX="0.0" DY="0.0" REF="Process74" REFTYPE="6">
-              <BOXES>
-                <RBOX OID="RefBox87" X="361.0" Y="327.0" DX="0.0" DY="0.0" REF="OutboxParameter81" REFTYPE="4">
-                  <BOXES />
-                </RBOX>
-                <RBOX OID="RefBox185" X="237.0" Y="312.0" DX="0.0" DY="0.0" REF="system.OUTBOX_REST_RESPONSE" REFTYPE="9">
-                  <BOXES />
-                </RBOX>
-              </BOXES>
-            </RBOX>
-            <RBOX OID="RefBox83" X="289.0" Y="152.0" DX="0.0" DY="0.0" REF="Activity82" REFTYPE="0">
-              <BOXES>
-                <RBOX OID="RefBox88" X="222.0" Y="100.0" DX="0.0" DY="0.0" REF="InboxParameter48" REFTYPE="3">
-                  <BOXES />
-                </RBOX>
-                <RBOX OID="RefBox89" X="349.0" Y="102.0" DX="0.0" DY="0.0" REF="InboxParameter49" REFTYPE="3">
-                  <BOXES />
-                </RBOX>
-                <RBOX OID="RefBox90" X="381.0" Y="215.0" DX="0.0" DY="0.0" REF="OutboxParameter50" REFTYPE="4">
-                  <BOXES />
-                </RBOX>
-                <RBOX OID="RefBox184" X="289.0" Y="212.0" DX="0.0" DY="0.0" REF="OutboxParameter69" REFTYPE="9">
                   <BOXES />
                 </RBOX>
               </BOXES>
@@ -365,9 +289,10 @@
     </PROC>
     <PROC OID="Process308" NAME="Composition" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
-        <PARAM OID="InboxParameter356" NAME="currntLocation" DESC="" TYPE="String" />
+        <PARAM OID="InboxParameter356" NAME="longitude" DESC="" TYPE="double" />
         <PARAM OID="InboxParameter358" NAME="radius" DESC="" TYPE="String" />
         <PARAM OID="InboxParameter360" NAME="driverId" DESC="" TYPE="String" />
+        <PARAM OID="InboxParameter524" NAME="latitude" DESC="" TYPE="double" />
       </INBOX>
       <OUTBOX>
         <PARAM OID="OutboxParameter362" NAME="bestLots" DESC="" TYPE="String[]" />
@@ -377,7 +302,8 @@
         <ACTIVITY OID="Activity319" NAME="getAvailableLots" DESC="" ACT="Finished(getLotsInRange)" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program188" />
         <ACTIVITY OID="Activity324" NAME="getDriverPreferences" DESC="" ACT="" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program1" />
         <ACTIVITY OID="Activity329" NAME="getLotRate" DESC="" ACT="Finished(getAvailableLots)" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program97" />
-        <ACTIVITY OID="Activity334" NAME="getBestLotsFromGA" DESC="" ACT="Finished(getDriverPreferences) AND Finished(getAvailableLots) AND Finished(getLotRate)" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program245" />
+        <ACTIVITY OID="Activity334" NAME="getBestLotsFromGA" DESC="" ACT="Finished(getDriverPreferences) AND Finished(getAvailableLots) AND Finished(getLotRate) AND Finished(SOAP_getLocationInfo)" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program245" />
+        <ACTIVITY OID="Activity503" NAME="SOAP_getLocationInfo" DESC="" ACT="" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program458" />
       </TASKS>
       <DATAFLOW>
         <BIND OID="Binding363" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter356" DESTPID="InboxParameter48" DESTTID="Activity313" ACTION="0" />
@@ -389,6 +315,10 @@
         <BIND OID="Binding399" SRCTYP="1" DESTTYP="0" SRCPID="OutboxParameter69" DESTPID="InboxParameter189" SRCTID="Activity313" DESTTID="Activity319" ACTION="0" />
         <BIND OID="Binding402" SRCTYP="1" DESTTYP="3" SRCPID="OutboxParameter267" DESTPID="OutboxParameter362" SRCTID="Activity334" ACTION="0" />
         <BIND OID="Binding405" SRCTYP="1" DESTTYP="0" SRCPID="OutboxParameter118" DESTPID="InboxParameter247" SRCTID="Activity329" DESTTID="Activity334" ACTION="0" />
+        <BIND OID="Binding514" SRCTYP="1" DESTTYP="0" SRCPID="OutboxParameter474" DESTPID="InboxParameter506" SRCTID="Activity503" DESTTID="Activity334" ACTION="0" />
+        <BIND OID="Binding528" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter524" DESTPID="InboxParameter523" DESTTID="Activity313" ACTION="0" />
+        <BIND OID="Binding530" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter524" DESTPID="InboxParameter460" DESTTID="Activity503" ACTION="0" />
+        <BIND OID="Binding532" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter356" DESTPID="InboxParameter459" DESTTID="Activity503" ACTION="0" />
       </DATAFLOW>
       <VIEWS>
         <VIEW OID="View309" NAME="ControlFlow" DESC="" VTYPE="0">
@@ -398,6 +328,7 @@
             <ARROW OID="Arrow349" SOURCE="RefBox321" DESTINATION="RefBox336" REFTYPE="4" ROUTE="2" />
             <ARROW OID="Arrow352" SOURCE="RefBox331" DESTINATION="RefBox336" REFTYPE="4" ROUTE="2" />
             <ARROW OID="Arrow355" SOURCE="RefBox321" DESTINATION="RefBox331" REFTYPE="4" ROUTE="2" />
+            <ARROW OID="Arrow516" SOURCE="RefBox508" DESTINATION="RefBox336" REFTYPE="4" ROUTE="2" />
           </ARROWS>
           <BOXES>
             <RBOX OID="RefBox315" X="122.0" Y="43.0" DX="0.0" DY="0.0" REF="Activity313" REFTYPE="0">
@@ -415,6 +346,9 @@
             <RBOX OID="RefBox336" X="128.0" Y="324.0" DX="0.0" DY="0.0" REF="Activity334" REFTYPE="0">
               <BOXES />
             </RBOX>
+            <RBOX OID="RefBox508" X="0.0" Y="300.0" DX="0.0" DY="0.0" REF="Activity503" REFTYPE="0">
+              <BOXES />
+            </RBOX>
           </BOXES>
           <GROUPS />
         </VIEW>
@@ -429,83 +363,254 @@
             <ARROW OID="Arrow400" SOURCE="RefBox372" DESTINATION="RefBox322" REF="Binding399" REFTYPE="1" ROUTE="2" />
             <ARROW OID="Arrow403" SOURCE="RefBox401" DESTINATION="RefBox369" REF="Binding402" REFTYPE="1" ROUTE="2" />
             <ARROW OID="Arrow406" SOURCE="RefBox404" DESTINATION="RefBox338" REF="Binding405" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow515" SOURCE="RefBox513" DESTINATION="RefBox509" REF="Binding514" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow529" SOURCE="RefBox525" DESTINATION="RefBox526" REF="Binding528" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow531" SOURCE="RefBox525" DESTINATION="RefBox510" REF="Binding530" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow533" SOURCE="RefBox357" DESTINATION="RefBox511" REF="Binding532" REFTYPE="1" ROUTE="2" />
           </ARROWS>
           <BOXES>
-            <RBOX OID="RefBox311" X="378.0" Y="-20.0" DX="0.0" DY="0.0" REF="Process308" REFTYPE="5">
+            <RBOX OID="RefBox311" X="385.0" Y="-17.0" DX="0.0" DY="0.0" REF="Process308" REFTYPE="5">
               <BOXES>
-                <RBOX OID="RefBox357" X="301.0" Y="21.0" DX="0.0" DY="0.0" REF="InboxParameter356" REFTYPE="3">
+                <RBOX OID="RefBox357" X="258.0" Y="18.0" DX="0.0" DY="0.0" REF="InboxParameter356" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox359" X="398.0" Y="29.0" DX="0.0" DY="0.0" REF="InboxParameter358" REFTYPE="3">
+                <RBOX OID="RefBox359" X="454.0" Y="21.0" DX="0.0" DY="0.0" REF="InboxParameter358" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox361" X="460.0" Y="29.0" DX="0.0" DY="0.0" REF="InboxParameter360" REFTYPE="3">
+                <RBOX OID="RefBox361" X="636.0" Y="39.0" DX="0.0" DY="0.0" REF="InboxParameter360" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox525" X="344.0" Y="19.0" DX="0.0" DY="0.0" REF="InboxParameter524" REFTYPE="3">
                   <BOXES />
                 </RBOX>
               </BOXES>
             </RBOX>
-            <RBOX OID="RefBox312" X="438.0" Y="489.0" DX="0.0" DY="0.0" REF="Process308" REFTYPE="6">
+            <RBOX OID="RefBox312" X="463.0" Y="488.0" DX="0.0" DY="0.0" REF="Process308" REFTYPE="6">
               <BOXES>
-                <RBOX OID="RefBox369" X="461.0" Y="461.0" DX="0.0" DY="0.0" REF="OutboxParameter362" REFTYPE="4">
+                <RBOX OID="RefBox369" X="482.0" Y="454.0" DX="0.0" DY="0.0" REF="OutboxParameter362" REFTYPE="4">
                   <BOXES />
                 </RBOX>
               </BOXES>
             </RBOX>
-            <RBOX OID="RefBox314" X="260.0" Y="121.0" DX="0.0" DY="0.0" REF="Activity313" REFTYPE="0">
+            <RBOX OID="RefBox314" X="382.0" Y="110.0" DX="0.0" DY="0.0" REF="Activity313" REFTYPE="0">
               <BOXES>
-                <RBOX OID="RefBox316" X="251.0" Y="82.0" DX="0.0" DY="0.0" REF="InboxParameter48" REFTYPE="3">
+                <RBOX OID="RefBox316" X="347.0" Y="75.0" DX="0.0" DY="0.0" REF="InboxParameter48" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox317" X="349.0" Y="81.0" DX="0.0" DY="0.0" REF="InboxParameter49" REFTYPE="3">
+                <RBOX OID="RefBox317" X="461.0" Y="70.0" DX="0.0" DY="0.0" REF="InboxParameter49" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox372" X="262.0" Y="165.0" DX="0.0" DY="0.0" REF="OutboxParameter69" REFTYPE="9">
+                <RBOX OID="RefBox372" X="398.0" Y="152.0" DX="0.0" DY="0.0" REF="OutboxParameter69" REFTYPE="9">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox526" X="409.0" Y="69.0" DX="0.0" DY="0.0" REF="InboxParameter523" REFTYPE="3">
                   <BOXES />
                 </RBOX>
               </BOXES>
             </RBOX>
-            <RBOX OID="RefBox320" X="291.0" Y="239.0" DX="0.0" DY="0.0" REF="Activity319" REFTYPE="0">
+            <RBOX OID="RefBox320" X="362.0" Y="224.0" DX="0.0" DY="0.0" REF="Activity319" REFTYPE="0">
               <BOXES>
-                <RBOX OID="RefBox322" X="315.0" Y="202.0" DX="0.0" DY="0.0" REF="InboxParameter189" REFTYPE="3">
+                <RBOX OID="RefBox322" X="395.0" Y="189.0" DX="0.0" DY="0.0" REF="InboxParameter189" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox376" X="319.0" Y="275.0" DX="0.0" DY="0.0" REF="OutboxParameter209" REFTYPE="9">
+                <RBOX OID="RefBox376" X="381.0" Y="262.0" DX="0.0" DY="0.0" REF="OutboxParameter209" REFTYPE="9">
                   <BOXES />
                 </RBOX>
               </BOXES>
             </RBOX>
-            <RBOX OID="RefBox325" X="490.0" Y="178.0" DX="0.0" DY="0.0" REF="Activity324" REFTYPE="0">
+            <RBOX OID="RefBox325" X="605.0" Y="150.0" DX="0.0" DY="0.0" REF="Activity324" REFTYPE="0">
               <BOXES>
-                <RBOX OID="RefBox327" X="495.0" Y="128.0" DX="0.0" DY="0.0" REF="InboxParameter35" REFTYPE="3">
+                <RBOX OID="RefBox327" X="638.0" Y="100.0" DX="0.0" DY="0.0" REF="InboxParameter35" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox396" X="518.0" Y="217.0" DX="0.0" DY="0.0" REF="OutboxParameter22" REFTYPE="9">
+                <RBOX OID="RefBox396" X="646.0" Y="233.0" DX="0.0" DY="0.0" REF="OutboxParameter22" REFTYPE="9">
                   <BOXES />
                 </RBOX>
               </BOXES>
             </RBOX>
-            <RBOX OID="RefBox330" X="227.0" Y="329.0" DX="0.0" DY="0.0" REF="Activity329" REFTYPE="0">
+            <RBOX OID="RefBox330" X="278.0" Y="299.0" DX="0.0" DY="0.0" REF="Activity329" REFTYPE="0">
               <BOXES>
-                <RBOX OID="RefBox389" X="242.0" Y="289.0" DX="0.0" DY="0.0" REF="InboxParameter98" REFTYPE="3">
+                <RBOX OID="RefBox389" X="298.0" Y="261.0" DX="0.0" DY="0.0" REF="InboxParameter98" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox404" X="239.0" Y="375.0" DX="0.0" DY="0.0" REF="OutboxParameter118" REFTYPE="9">
+                <RBOX OID="RefBox404" X="283.0" Y="335.0" DX="0.0" DY="0.0" REF="OutboxParameter118" REFTYPE="9">
                   <BOXES />
                 </RBOX>
               </BOXES>
             </RBOX>
             <RBOX OID="RefBox335" X="444.0" Y="380.0" DX="0.0" DY="0.0" REF="Activity334" REFTYPE="0">
               <BOXES>
-                <RBOX OID="RefBox338" X="362.0" Y="346.0" DX="0.0" DY="0.0" REF="InboxParameter247" REFTYPE="3">
+                <RBOX OID="RefBox338" X="428.0" Y="334.0" DX="0.0" DY="0.0" REF="InboxParameter247" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox339" X="484.0" Y="336.0" DX="0.0" DY="0.0" REF="InboxParameter248" REFTYPE="3">
+                <RBOX OID="RefBox339" X="552.0" Y="336.0" DX="0.0" DY="0.0" REF="InboxParameter248" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox390" X="444.0" Y="330.0" DX="0.0" DY="0.0" REF="InboxParameter246" REFTYPE="3">
+                <RBOX OID="RefBox390" X="493.0" Y="338.0" DX="0.0" DY="0.0" REF="InboxParameter246" REFTYPE="3">
                   <BOXES />
                 </RBOX>
-                <RBOX OID="RefBox401" X="466.0" Y="416.0" DX="0.0" DY="0.0" REF="OutboxParameter267" REFTYPE="9">
+                <RBOX OID="RefBox401" X="476.0" Y="415.0" DX="0.0" DY="0.0" REF="OutboxParameter267" REFTYPE="9">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox509" X="342.0" Y="381.0" DX="0.0" DY="0.0" REF="InboxParameter506" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+            <RBOX OID="RefBox507" X="116.0" Y="328.0" DX="0.0" DY="0.0" REF="Activity503" REFTYPE="0">
+              <BOXES>
+                <RBOX OID="RefBox510" X="184.0" Y="276.0" DX="0.0" DY="0.0" REF="InboxParameter460" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox511" X="144.0" Y="275.0" DX="0.0" DY="0.0" REF="InboxParameter459" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox513" X="144.0" Y="382.0" DX="0.0" DY="0.0" REF="OutboxParameter474" REFTYPE="9">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+          </BOXES>
+          <GROUPS />
+        </VIEW>
+      </VIEWS>
+    </PROC>
+    <PROC OID="Process480" NAME="Test_getLocationInfo" DESC="Automatically generated test process for getLocationInfo" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+      <INBOX>
+        <PARAM OID="InboxParameter485" NAME="longitude" DESC="" TYPE="double" />
+        <PARAM OID="InboxParameter486" NAME="latitude" DESC="" TYPE="double" />
+      </INBOX>
+      <OUTBOX>
+        <PARAM OID="OutboxParameter487" NAME="locationInfo" DESC="" TYPE="xsd:getInRangeDriversResponse" />
+      </OUTBOX>
+      <TASKS>
+        <ACTIVITY OID="Activity488" NAME="SOAP_getLocationInfo" DESC="" ACT="" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program458" />
+      </TASKS>
+      <DATAFLOW>
+        <BIND OID="Binding495" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter485" DESTPID="InboxParameter459" DESTTID="Activity488" ACTION="0" />
+        <BIND OID="Binding498" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter486" DESTPID="InboxParameter460" DESTTID="Activity488" ACTION="0" />
+        <BIND OID="Binding501" SRCTYP="0" DESTTYP="3" SRCPID="OutboxParameter461" DESTPID="OutboxParameter487" SRCTID="Activity488" ACTION="0" />
+      </DATAFLOW>
+      <VIEWS>
+        <VIEW OID="View481" NAME="ControlFlow" DESC="" VTYPE="0">
+          <ARROWS />
+          <BOXES>
+            <RBOX OID="RefBox490" X="0.0" Y="50.0" DX="0.0" DY="0.0" REF="Activity488" REFTYPE="0">
+              <BOXES />
+            </RBOX>
+          </BOXES>
+          <GROUPS />
+        </VIEW>
+        <VIEW OID="View482" NAME="DataFlow" DESC="" VTYPE="1">
+          <ARROWS>
+            <ARROW OID="Arrow496" SOURCE="RefBox494" DESTINATION="RefBox491" REF="Binding495" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow499" SOURCE="RefBox497" DESTINATION="RefBox492" REF="Binding498" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow502" SOURCE="RefBox493" DESTINATION="RefBox500" REF="Binding501" REFTYPE="1" ROUTE="2" />
+          </ARROWS>
+          <BOXES>
+            <RBOX OID="RefBox483" X="250.0" Y="0.0" DX="0.0" DY="0.0" REF="Process480" REFTYPE="5">
+              <BOXES>
+                <RBOX OID="RefBox494" X="250.0" Y="50.0" DX="0.0" DY="0.0" REF="InboxParameter485" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox497" X="300.0" Y="50.0" DX="0.0" DY="0.0" REF="InboxParameter486" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+            <RBOX OID="RefBox484" X="450.0" Y="700.0" DX="0.0" DY="0.0" REF="Process480" REFTYPE="6">
+              <BOXES>
+                <RBOX OID="RefBox500" X="450.0" Y="640.0" DX="0.0" DY="0.0" REF="OutboxParameter487" REFTYPE="4">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+            <RBOX OID="RefBox489" X="350.0" Y="350.0" DX="0.0" DY="0.0" REF="Activity488" REFTYPE="0">
+              <BOXES>
+                <RBOX OID="RefBox491" X="300.0" Y="300.0" DX="0.0" DY="0.0" REF="InboxParameter459" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox492" X="350.0" Y="300.0" DX="0.0" DY="0.0" REF="InboxParameter460" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox493" X="325.0" Y="410.0" DX="0.0" DY="0.0" REF="OutboxParameter461" REFTYPE="4">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+          </BOXES>
+          <GROUPS />
+        </VIEW>
+      </VIEWS>
+    </PROC>
+    <PROC OID="Process534" NAME="Test_getLotsInRange" DESC="Automatically generated test process for getLotsInRange" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+      <INBOX>
+        <PARAM OID="InboxParameter539" NAME="longitude" DESC="" TYPE="double" />
+        <PARAM OID="InboxParameter540" NAME="radius" DESC="" TYPE="int" />
+        <PARAM OID="InboxParameter541" NAME="latitude" DESC="" TYPE="double" />
+      </INBOX>
+      <OUTBOX>
+        <PARAM OID="OutboxParameter542" NAME="listOfNearbyLots" DESC="" TYPE="String[]" />
+      </OUTBOX>
+      <TASKS>
+        <ACTIVITY OID="Activity543" NAME="getLotsInRange" DESC="" ACT="" COND="TRUE" PRIORITY="0" DEP="4" SYNCH="0" FAILH="0" PROGRAMID="Program47" />
+      </TASKS>
+      <DATAFLOW>
+        <BIND OID="Binding551" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter539" DESTPID="InboxParameter48" DESTTID="Activity543" ACTION="0" />
+        <BIND OID="Binding554" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter540" DESTPID="InboxParameter49" DESTTID="Activity543" ACTION="0" />
+        <BIND OID="Binding557" SRCTYP="3" DESTTYP="0" SRCPID="InboxParameter541" DESTPID="InboxParameter523" DESTTID="Activity543" ACTION="0" />
+        <BIND OID="Binding560" SRCTYP="0" DESTTYP="3" SRCPID="OutboxParameter50" DESTPID="OutboxParameter542" SRCTID="Activity543" ACTION="0" />
+      </DATAFLOW>
+      <VIEWS>
+        <VIEW OID="View535" NAME="ControlFlow" DESC="" VTYPE="0">
+          <ARROWS />
+          <BOXES>
+            <RBOX OID="RefBox545" X="0.0" Y="50.0" DX="0.0" DY="0.0" REF="Activity543" REFTYPE="0">
+              <BOXES />
+            </RBOX>
+          </BOXES>
+          <GROUPS />
+        </VIEW>
+        <VIEW OID="View536" NAME="DataFlow" DESC="" VTYPE="1">
+          <ARROWS>
+            <ARROW OID="Arrow552" SOURCE="RefBox550" DESTINATION="RefBox546" REF="Binding551" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow555" SOURCE="RefBox553" DESTINATION="RefBox547" REF="Binding554" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow558" SOURCE="RefBox556" DESTINATION="RefBox548" REF="Binding557" REFTYPE="1" ROUTE="2" />
+            <ARROW OID="Arrow561" SOURCE="RefBox549" DESTINATION="RefBox559" REF="Binding560" REFTYPE="1" ROUTE="2" />
+          </ARROWS>
+          <BOXES>
+            <RBOX OID="RefBox537" X="289.0" Y="13.0" DX="0.0" DY="0.0" REF="Process534" REFTYPE="5">
+              <BOXES>
+                <RBOX OID="RefBox550" X="289.0" Y="63.0" DX="0.0" DY="0.0" REF="InboxParameter539" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox553" X="339.0" Y="63.0" DX="0.0" DY="0.0" REF="InboxParameter540" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox556" X="389.0" Y="63.0" DX="0.0" DY="0.0" REF="InboxParameter541" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+            <RBOX OID="RefBox538" X="349.0" Y="361.0" DX="0.0" DY="0.0" REF="Process534" REFTYPE="6">
+              <BOXES>
+                <RBOX OID="RefBox559" X="349.0" Y="301.0" DX="0.0" DY="0.0" REF="OutboxParameter542" REFTYPE="4">
+                  <BOXES />
+                </RBOX>
+              </BOXES>
+            </RBOX>
+            <RBOX OID="RefBox544" X="368.0" Y="176.0" DX="0.0" DY="0.0" REF="Activity543" REFTYPE="0">
+              <BOXES>
+                <RBOX OID="RefBox546" X="293.0" Y="126.0" DX="0.0" DY="0.0" REF="InboxParameter48" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox547" X="343.0" Y="126.0" DX="0.0" DY="0.0" REF="InboxParameter49" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox548" X="393.0" Y="126.0" DX="0.0" DY="0.0" REF="InboxParameter523" REFTYPE="3">
+                  <BOXES />
+                </RBOX>
+                <RBOX OID="RefBox549" X="343.0" Y="236.0" DX="0.0" DY="0.0" REF="OutboxParameter50" REFTYPE="4">
                   <BOXES />
                 </RBOX>
               </BOXES>
@@ -546,8 +651,9 @@
     </PROGRAM>
     <PROGRAM OID="Program47" NAME="getLotsInRange" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
-        <PARAM OID="InboxParameter48" NAME="currentLocation" DESC="" TYPE="String" />
-        <PARAM OID="InboxParameter49" NAME="radius" DESC="" TYPE="int">1000</PARAM>
+        <PARAM OID="InboxParameter48" NAME="longitude" DESC="" TYPE="double" />
+        <PARAM OID="InboxParameter49" NAME="radius" DESC="" TYPE="int" />
+        <PARAM OID="InboxParameter523" NAME="latitude" DESC="" TYPE="double" />
       </INBOX>
       <OUTBOX>
         <PARAM OID="OutboxParameter50" NAME="listOfNearbyLots" DESC="" TYPE="String[]" />
@@ -556,7 +662,7 @@
         <METHOD OID="AccessMethod51" NAME="HTTPAdapter" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" COMP="system.CT_HTTP">
           <INBOX>
             <PARAM OID="InboxParameter53" NAME="method" TYPE="Enum:GET,POST,PUT,DELETE,OPTIONS,HEAD">GET</PARAM>
-            <PARAM OID="InboxParameter55" NAME="urlstring" TYPE="URI">http://marwantushyeh-001-site1.itempurl.com/api/slot/getSlotsInRange?currentLocation=%currentLocation%&amp;radius=%radius%</PARAM>
+            <PARAM OID="InboxParameter55" NAME="urlstring" TYPE="URI">http://marwantushyeh-001-site1.itempurl.com/api/slot/getSlotsInRange?longitude=%longitude%&amp;latitude=%latitude%&amp;radius=%radius%</PARAM>
             <PARAM OID="InboxParameter57" NAME="headin" TYPE="Text Advanced" />
             <PARAM OID="InboxParameter59" NAME="body" TYPE="Text" />
             <PARAM OID="InboxParameter61" NAME="user" TYPE="String Advanced" />
@@ -631,6 +737,7 @@
         <PARAM OID="InboxParameter246" NAME="lotIds" DESC="" TYPE="String[]" />
         <PARAM OID="InboxParameter247" NAME="lotRates" DESC="" TYPE="int[]" />
         <PARAM OID="InboxParameter248" NAME="driverPreferences" DESC="" TYPE="dict" />
+        <PARAM OID="InboxParameter506" NAME="locationInfo" DESC="" TYPE="xsd:getInRangeDriversResponse" />
       </INBOX>
       <OUTBOX>
         <PARAM OID="OutboxParameter293" NAME="bestLotsIds" DESC="" TYPE="String[]" />
@@ -651,6 +758,35 @@
             <PARAM OID="OutboxParameter267" NAME="page" TYPE="String" />
             <PARAM OID="OutboxParameter269" NAME="status" TYPE="String" />
             <PARAM OID="OutboxParameter271" NAME="errormsg" TYPE="String" />
+          </OUTBOX>
+        </METHOD>
+      </ACCESS>
+    </PROGRAM>
+    <PROGRAM OID="Program458" NAME="SOAP_getLocationInfo" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+      <INBOX>
+        <PARAM OID="InboxParameter459" NAME="long" DESC="" TYPE="double" />
+        <PARAM OID="InboxParameter460" NAME="lat" DESC="" TYPE="double" />
+      </INBOX>
+      <OUTBOX>
+        <PARAM OID="OutboxParameter461" NAME="locationInfo" DESC="" TYPE="xsd:getInRangeDriversResponse" />
+      </OUTBOX>
+      <ACCESS>
+        <METHOD OID="AccessMethod462" NAME="INVOKEAdapter" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" COMP="system.router.CT_INVOKE">
+          <INBOX>
+            <PARAM OID="InboxParameter464" NAME="message" TYPE="XML">&lt;soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapEnc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsdns0="http://tempuri.org/Imports" xmlns:bns="http://tempuri.org/"&gt;
+&lt;soapEnv:Body&gt;
+    &lt;bns:getInRangeDrivers&gt;
+         &lt;bns:lat&gt;%lat%&lt;/bns:lat&gt;
+         &lt;bns:lng&gt;%long%&lt;/bns:lng&gt;
+&lt;/bns:getInRangeDrivers&gt;
+&lt;/soapEnv:Body&gt;&lt;/soapEnv:Envelope&gt;</PARAM>
+            <PARAM OID="InboxParameter466" NAME="destination" TYPE="URI">http://bedetaxi.cloudapp.net/BedeService/Service1.svc</PARAM>
+            <PARAM OID="InboxParameter468" NAME="SOAPaction" TYPE="String">http://tempuri.org/IService1/getInRangeDrivers</PARAM>
+            <PARAM OID="InboxParameter470" NAME="timeout" TYPE="Integer Advanced" />
+          </INBOX>
+          <OUTBOX>
+            <PARAM OID="OutboxParameter472" NAME="error" TYPE="String" />
+            <PARAM OID="OutboxParameter474" NAME="message" TYPE="Text" />
           </OUTBOX>
         </METHOD>
       </ACCESS>
