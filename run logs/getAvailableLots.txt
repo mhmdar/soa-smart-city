@@ -1,0 +1,47 @@
+{parking_v10}Test_getAvailableLots[1.0].0.0:1:allLots,[1,3,7,8,9,12,15,18,23,25,27,51,78,99,122,147,192,253,317]
+{parking_v10}Test_getAvailableLots[1.0].0.0:2:availableLots,null
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:CALLER,null
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:delete_on_finish,null
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:ENDDT,2018-06-03 24:50:04.938
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:Finalized,Yes
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:READYDT,2018-06-03 24:50:04.376
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:START,1
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:STARTDT,2018-06-03 24:50:04.376
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:STATE,4
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:SuspendAfterCreation,null
+{parking_v10}Test_getAvailableLots[1.0].0.0:0:WALL,0.562
+{parking_v10}Test_getAvailableLots[1.0].0.0:5:Response,[64,70,76,82,88,94,100,106,112,118,124,130,136,142]
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:1:allLots,[1,3,7,8,9,12,15,18,23,25,27,51,78,99,122,147,192,253,317]
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:2:availableLots,null
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:ENDDT,2018-06-03 24:50:04.938
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:HOST,127.0.1.1
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:NAME,getAvailableLots
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:PROGNAME,{parking_v10}getAvailableLots[1.0]
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:READYDT,2018-06-03 24:50:04.377
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:RESTART,null
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:START,1
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:STARTDT,2018-06-03 24:50:04.378
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:STATE,4
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:TYPE,ACTY
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:0:WALL,0.561
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:4:AM,HTTPAdapter
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:4:body,[1,3,7,8,9,12,15,18,23,25,27,51,78,99,122,147,192,253,317]
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:4:headin,content-type: application/json
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:4:method,POST
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/slot/GetAvailableSlots
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:5:errormsg,OK
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[51]
+Date:[Sat, 02 Jun 2018 21:50:05 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:5:page,[64,70,76,82,88,94,100,106,112,118,124,130,136,142]
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[51], Date=[Sat, 02 Jun 2018 21:50:05 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Test_getAvailableLots[1.0].getAvailableLots.0:5:status,200
