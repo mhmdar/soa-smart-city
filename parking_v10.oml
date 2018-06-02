@@ -331,22 +331,22 @@
             <ARROW OID="Arrow516" SOURCE="RefBox508" DESTINATION="RefBox336" REFTYPE="4" ROUTE="2" />
           </ARROWS>
           <BOXES>
-            <RBOX OID="RefBox315" X="122.0" Y="43.0" DX="0.0" DY="0.0" REF="Activity313" REFTYPE="0">
+            <RBOX OID="RefBox315" X="178.0" Y="33.0" DX="0.0" DY="0.0" REF="Activity313" REFTYPE="0">
               <BOXES />
             </RBOX>
-            <RBOX OID="RefBox321" X="113.0" Y="96.0" DX="0.0" DY="0.0" REF="Activity319" REFTYPE="0">
+            <RBOX OID="RefBox321" X="169.0" Y="86.0" DX="0.0" DY="0.0" REF="Activity319" REFTYPE="0">
               <BOXES />
             </RBOX>
-            <RBOX OID="RefBox326" X="214.0" Y="147.0" DX="0.0" DY="0.0" REF="Activity324" REFTYPE="0">
+            <RBOX OID="RefBox326" X="270.0" Y="137.0" DX="0.0" DY="0.0" REF="Activity324" REFTYPE="0">
               <BOXES />
             </RBOX>
-            <RBOX OID="RefBox331" X="33.0" Y="179.0" DX="0.0" DY="0.0" REF="Activity329" REFTYPE="0">
+            <RBOX OID="RefBox331" X="125.0" Y="169.0" DX="0.0" DY="0.0" REF="Activity329" REFTYPE="0">
               <BOXES />
             </RBOX>
-            <RBOX OID="RefBox336" X="128.0" Y="324.0" DX="0.0" DY="0.0" REF="Activity334" REFTYPE="0">
+            <RBOX OID="RefBox336" X="187.0" Y="363.0" DX="0.0" DY="0.0" REF="Activity334" REFTYPE="0">
               <BOXES />
             </RBOX>
-            <RBOX OID="RefBox508" X="0.0" Y="300.0" DX="0.0" DY="0.0" REF="Activity503" REFTYPE="0">
+            <RBOX OID="RefBox508" X="56.0" Y="290.0" DX="0.0" DY="0.0" REF="Activity503" REFTYPE="0">
               <BOXES />
             </RBOX>
           </BOXES>
