@@ -1,0 +1,47 @@
+{parking_v10}Test_getLotRate[1.0].0.0:1:lots,[1,3,6,8,11,17,28,39,51]
+{parking_v10}Test_getLotRate[1.0].0.0:2:lotsRate,null
+{parking_v10}Test_getLotRate[1.0].0.0:0:CALLER,null
+{parking_v10}Test_getLotRate[1.0].0.0:0:delete_on_finish,null
+{parking_v10}Test_getLotRate[1.0].0.0:0:ENDDT,2018-06-03 24:47:11.074
+{parking_v10}Test_getLotRate[1.0].0.0:0:Finalized,Yes
+{parking_v10}Test_getLotRate[1.0].0.0:0:READYDT,2018-06-03 24:47:10.517
+{parking_v10}Test_getLotRate[1.0].0.0:0:START,1
+{parking_v10}Test_getLotRate[1.0].0.0:0:STARTDT,2018-06-03 24:47:10.518
+{parking_v10}Test_getLotRate[1.0].0.0:0:STATE,4
+{parking_v10}Test_getLotRate[1.0].0.0:0:SuspendAfterCreation,null
+{parking_v10}Test_getLotRate[1.0].0.0:0:WALL,0.557
+{parking_v10}Test_getLotRate[1.0].0.0:5:Response,[23,3,17,4,25,26,9,15,4]
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:1:lots,[1,3,6,8,11,17,28,39,51]
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:2:lotsRate,null
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:ENDDT,2018-06-03 24:47:11.073
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:HOST,127.0.1.1
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:NAME,getLotRate
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:PROGNAME,{parking_v10}getLotRate[1.0]
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:READYDT,2018-06-03 24:47:10.518
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:RESTART,null
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:START,1
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:STARTDT,2018-06-03 24:47:10.519
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:STATE,4
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:TYPE,ACTY
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:0:WALL,0.555
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:4:AM,HTTPAdapter
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:4:body,[1,3,6,8,11,17,28,39,51]
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:4:headin,content-type: application/json
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:4:method,POST
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/slot/GetSlotCost
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:5:errormsg,OK
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[24]
+Date:[Sat, 02 Jun 2018 21:47:11 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:5:page,[23,3,17,4,25,26,9,15,4]
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[24], Date=[Sat, 02 Jun 2018 21:47:11 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Test_getLotRate[1.0].getLotRate.0:5:status,200
