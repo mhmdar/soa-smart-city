@@ -1,0 +1,213 @@
+{parking_v10}Composition[1.0].0.4:1:driverId,1
+{parking_v10}Composition[1.0].0.4:1:latitude,31.906009
+{parking_v10}Composition[1.0].0.4:1:longitude,35.204124
+{parking_v10}Composition[1.0].0.4:1:radius,4
+{parking_v10}Composition[1.0].0.4:2:bestLots,[46,52,58,64,70,76,82,88,94]
+{parking_v10}Composition[1.0].0.4:0:CALLER,null
+{parking_v10}Composition[1.0].0.4:0:delete_on_finish,null
+{parking_v10}Composition[1.0].0.4:0:ENDDT,2018-06-03 24:46:21.177
+{parking_v10}Composition[1.0].0.4:0:Finalized,Yes
+{parking_v10}Composition[1.0].0.4:0:READYDT,2018-06-03 24:46:19.224
+{parking_v10}Composition[1.0].0.4:0:START,1
+{parking_v10}Composition[1.0].0.4:0:STARTDT,2018-06-03 24:46:19.225
+{parking_v10}Composition[1.0].0.4:0:STATE,4
+{parking_v10}Composition[1.0].0.4:0:SuspendAfterCreation,null
+{parking_v10}Composition[1.0].0.4:0:WALL,1.953
+{parking_v10}Composition[1.0].getAvailableLots.4:1:allLots,[10,16,22,28,34,40,46,52,58,64,70,76,82,88,94,100,106,112,118,124,130,136,142,148,154,160,166,172,178,184,190,196,202,208,214,220,226,232,238,244,250,256,262,268,274,280,286,292,298,304]
+{parking_v10}Composition[1.0].getAvailableLots.4:2:availableLots,null
+{parking_v10}Composition[1.0].getAvailableLots.4:0:ENDDT,2018-06-03 24:46:20.221
+{parking_v10}Composition[1.0].getAvailableLots.4:0:HOST,127.0.1.1
+{parking_v10}Composition[1.0].getAvailableLots.4:0:NAME,getAvailableLots
+{parking_v10}Composition[1.0].getAvailableLots.4:0:PROGNAME,{parking_v10}getAvailableLots[1.0]
+{parking_v10}Composition[1.0].getAvailableLots.4:0:READYDT,2018-06-03 24:46:19.736
+{parking_v10}Composition[1.0].getAvailableLots.4:0:RESTART,null
+{parking_v10}Composition[1.0].getAvailableLots.4:0:START,1
+{parking_v10}Composition[1.0].getAvailableLots.4:0:STARTDT,2018-06-03 24:46:19.740
+{parking_v10}Composition[1.0].getAvailableLots.4:0:STATE,4
+{parking_v10}Composition[1.0].getAvailableLots.4:0:TYPE,ACTY
+{parking_v10}Composition[1.0].getAvailableLots.4:0:WALL,0.485
+{parking_v10}Composition[1.0].getAvailableLots.4:4:AM,HTTPAdapter
+{parking_v10}Composition[1.0].getAvailableLots.4:4:body,[10,16,22,28,34,40,46,52,58,64,70,76,82,88,94,100,106,112,118,124,130,136,142,148,154,160,166,172,178,184,190,196,202,208,214,220,226,232,238,244,250,256,262,268,274,280,286,292,298,304]
+{parking_v10}Composition[1.0].getAvailableLots.4:4:headin,content-type: application/json
+{parking_v10}Composition[1.0].getAvailableLots.4:4:method,POST
+{parking_v10}Composition[1.0].getAvailableLots.4:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/slot/GetAvailableSlots
+{parking_v10}Composition[1.0].getAvailableLots.4:5:errormsg,OK
+{parking_v10}Composition[1.0].getAvailableLots.4:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[35]
+Date:[Sat, 02 Jun 2018 21:46:20 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Composition[1.0].getAvailableLots.4:5:page,[40,46,52,58,64,70,76,82,88,94,100]
+{parking_v10}Composition[1.0].getAvailableLots.4:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[35], Date=[Sat, 02 Jun 2018 21:46:20 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Composition[1.0].getAvailableLots.4:5:status,200
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:1:driverPreferences,{"Language":"En","Currency":"NIS","Name":"Hamoudeh","CarId":"12313","CurrentLocation":"32.12312:33.123131","ParkingType":"N","Date":"6/2/2018","Time":"14:46:20.3919743","Level":"5","maxCost":"28","Duration":"133"}
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:1:locationInfo,<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getInRangeDriversResponse xmlns="http://tempuri.org/"><getInRangeDriversResult>[{&quot;status&quot;:&quot;success&quot;,&quot;details&quot;:[&quot;db0354ad-5968-45ff-8688-91d747e1ec50&quot;],&quot;title&quot;:&quot;George Al Saa\u0027 St -Saleh Khalaf&quot;,&quot;country&quot;:&quot;ps&quot;,&quot;duration&quot;:3}]</getInRangeDriversResult></getInRangeDriversResponse></s:Body></s:Envelope>
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:1:lotIds,[40,46,52,58,64,70,76,82,88,94,100]
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:1:lotRates,[18,5,2,29,7,8,14,4,27,28,16]
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:2:bestLotsIds,null
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:ENDDT,2018-06-03 24:46:21.177
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:HOST,127.0.1.1
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:NAME,getBestLotsFromGA
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:PROGNAME,{parking_v10}getBestLotsFromGA[1.0]
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:READYDT,2018-06-03 24:46:20.687
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:RESTART,null
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:START,1
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:STARTDT,2018-06-03 24:46:20.687
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:STATE,4
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:TYPE,ACTY
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:0:WALL,0.49
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:4:AM,HTTPAdapter
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:4:body,{ slotIds: [40,46,52,58,64,70,76,82,88,94,100], slotPrices: [18,5,2,29,7,8,14,4,27,28,16] , driverPreference: {"Language":"En","Currency":"NIS","Name":"Hamoudeh","CarId":"12313","CurrentLocation":"32.12312:33.123131","ParkingType":"N","Date":"6/2/2018","Time":"14:46:20.3919743","Level":"5","maxCost":"28","Duration":"133"}}
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:4:headin,content-type:application/json
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:4:method,POST
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/slot/chooseBestSlotsFromGA
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:5:errormsg,OK
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[28]
+Date:[Sat, 02 Jun 2018 21:46:21 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:5:page,[46,52,58,64,70,76,82,88,94]
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[28], Date=[Sat, 02 Jun 2018 21:46:21 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Composition[1.0].getBestLotsFromGA.4:5:status,200
+{parking_v10}Composition[1.0].getDriverPreferences.4:1:driverId,1
+{parking_v10}Composition[1.0].getDriverPreferences.4:2:driverPreferences,null
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:ENDDT,2018-06-03 24:46:19.730
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:HOST,127.0.1.1
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:NAME,getDriverPreferences
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:PROGNAME,{parking_v10}getDriverPreferences[1.0]
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:READYDT,2018-06-03 24:46:19.225
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:RESTART,null
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:START,1
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:STARTDT,2018-06-03 24:46:19.228
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:STATE,4
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:TYPE,ACTY
+{parking_v10}Composition[1.0].getDriverPreferences.4:0:WALL,0.505
+{parking_v10}Composition[1.0].getDriverPreferences.4:4:AM,HTTPAdapter
+{parking_v10}Composition[1.0].getDriverPreferences.4:4:method,GET
+{parking_v10}Composition[1.0].getDriverPreferences.4:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/Driver/GetDriverPreferences?driverId=1
+{parking_v10}Composition[1.0].getDriverPreferences.4:5:errormsg,OK
+{parking_v10}Composition[1.0].getDriverPreferences.4:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[213]
+Date:[Sat, 02 Jun 2018 21:46:20 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Composition[1.0].getDriverPreferences.4:5:page,{"Language":"En","Currency":"NIS","Name":"Hamoudeh","CarId":"12313","CurrentLocation":"32.12312:33.123131","ParkingType":"N","Date":"6/2/2018","Time":"14:46:20.3919743","Level":"5","maxCost":"28","Duration":"133"}
+{parking_v10}Composition[1.0].getDriverPreferences.4:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[213], Date=[Sat, 02 Jun 2018 21:46:20 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Composition[1.0].getDriverPreferences.4:5:status,200
+{parking_v10}Composition[1.0].getLotRate.4:1:lots,[40,46,52,58,64,70,76,82,88,94,100]
+{parking_v10}Composition[1.0].getLotRate.4:2:lotsRate,null
+{parking_v10}Composition[1.0].getLotRate.4:0:ENDDT,2018-06-03 24:46:20.686
+{parking_v10}Composition[1.0].getLotRate.4:0:HOST,127.0.1.1
+{parking_v10}Composition[1.0].getLotRate.4:0:NAME,getLotRate
+{parking_v10}Composition[1.0].getLotRate.4:0:PROGNAME,{parking_v10}getLotRate[1.0]
+{parking_v10}Composition[1.0].getLotRate.4:0:READYDT,2018-06-03 24:46:20.221
+{parking_v10}Composition[1.0].getLotRate.4:0:RESTART,null
+{parking_v10}Composition[1.0].getLotRate.4:0:START,1
+{parking_v10}Composition[1.0].getLotRate.4:0:STARTDT,2018-06-03 24:46:20.226
+{parking_v10}Composition[1.0].getLotRate.4:0:STATE,4
+{parking_v10}Composition[1.0].getLotRate.4:0:TYPE,ACTY
+{parking_v10}Composition[1.0].getLotRate.4:0:WALL,0.465
+{parking_v10}Composition[1.0].getLotRate.4:4:AM,HTTPAdapter
+{parking_v10}Composition[1.0].getLotRate.4:4:body,[40,46,52,58,64,70,76,82,88,94,100]
+{parking_v10}Composition[1.0].getLotRate.4:4:headin,content-type: application/json
+{parking_v10}Composition[1.0].getLotRate.4:4:method,POST
+{parking_v10}Composition[1.0].getLotRate.4:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/slot/GetSlotCost
+{parking_v10}Composition[1.0].getLotRate.4:5:errormsg,OK
+{parking_v10}Composition[1.0].getLotRate.4:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[29]
+Date:[Sat, 02 Jun 2018 21:46:21 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Composition[1.0].getLotRate.4:5:page,[18,5,2,29,7,8,14,4,27,28,16]
+{parking_v10}Composition[1.0].getLotRate.4:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[29], Date=[Sat, 02 Jun 2018 21:46:21 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Composition[1.0].getLotRate.4:5:status,200
+{parking_v10}Composition[1.0].getLotsInRange.4:1:latitude,31.906009
+{parking_v10}Composition[1.0].getLotsInRange.4:1:longitude,35.204124
+{parking_v10}Composition[1.0].getLotsInRange.4:1:radius,4
+{parking_v10}Composition[1.0].getLotsInRange.4:2:listOfNearbyLots,null
+{parking_v10}Composition[1.0].getLotsInRange.4:0:ENDDT,2018-06-03 24:46:19.736
+{parking_v10}Composition[1.0].getLotsInRange.4:0:HOST,127.0.1.1
+{parking_v10}Composition[1.0].getLotsInRange.4:0:NAME,getLotsInRange
+{parking_v10}Composition[1.0].getLotsInRange.4:0:PROGNAME,{parking_v10}getLotsInRange[1.0]
+{parking_v10}Composition[1.0].getLotsInRange.4:0:READYDT,2018-06-03 24:46:19.225
+{parking_v10}Composition[1.0].getLotsInRange.4:0:RESTART,null
+{parking_v10}Composition[1.0].getLotsInRange.4:0:START,1
+{parking_v10}Composition[1.0].getLotsInRange.4:0:STARTDT,2018-06-03 24:46:19.227
+{parking_v10}Composition[1.0].getLotsInRange.4:0:STATE,4
+{parking_v10}Composition[1.0].getLotsInRange.4:0:TYPE,ACTY
+{parking_v10}Composition[1.0].getLotsInRange.4:0:WALL,0.511
+{parking_v10}Composition[1.0].getLotsInRange.4:4:AM,HTTPAdapter
+{parking_v10}Composition[1.0].getLotsInRange.4:4:method,GET
+{parking_v10}Composition[1.0].getLotsInRange.4:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/slot/getSlotsInRange?longitude=35.204124&latitude=31.906009&radius=4
+{parking_v10}Composition[1.0].getLotsInRange.4:5:errormsg,OK
+{parking_v10}Composition[1.0].getLotsInRange.4:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[186]
+Date:[Sat, 02 Jun 2018 21:46:20 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Composition[1.0].getLotsInRange.4:5:page,[10,16,22,28,34,40,46,52,58,64,70,76,82,88,94,100,106,112,118,124,130,136,142,148,154,160,166,172,178,184,190,196,202,208,214,220,226,232,238,244,250,256,262,268,274,280,286,292,298,304]
+{parking_v10}Composition[1.0].getLotsInRange.4:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[186], Date=[Sat, 02 Jun 2018 21:46:20 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Composition[1.0].getLotsInRange.4:5:status,200
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:1:lat,31.906009
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:1:long,35.204124
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:2:locationInfo,null
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:ENDDT,2018-06-03 24:46:20.596
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:HOST,127.0.1.1
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:NAME,SOAP_getLocationInfo
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:PROGNAME,{parking_v10}SOAP_getLocationInfo[1.0]
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:READYDT,2018-06-03 24:46:19.225
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:RESTART,null
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:START,1
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:STARTDT,2018-06-03 24:46:19.227
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:STATE,4
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:TYPE,ACTY
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:0:WALL,1.371
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:4:AM,INVOKEAdapter
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:4:destination,http://bedetaxi.cloudapp.net/BedeService/Service1.svc
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:4:message,<soapEnv:Envelope xmlns:soapEnv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapEnc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsdns0="http://tempuri.org/Imports" xmlns:bns="http://tempuri.org/">
+<soapEnv:Body>
+    <bns:getInRangeDrivers>
+         <bns:lat>31.906009</bns:lat>
+         <bns:lng>35.204124</bns:lng>
+</bns:getInRangeDrivers>
+</soapEnv:Body></soapEnv:Envelope>
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:4:SOAPaction,http://tempuri.org/IService1/getInRangeDrivers
+{parking_v10}Composition[1.0].SOAP_getLocationInfo.4:5:message,<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><getInRangeDriversResponse xmlns="http://tempuri.org/"><getInRangeDriversResult>[{&quot;status&quot;:&quot;success&quot;,&quot;details&quot;:[&quot;db0354ad-5968-45ff-8688-91d747e1ec50&quot;],&quot;title&quot;:&quot;George Al Saa\u0027 St -Saleh Khalaf&quot;,&quot;country&quot;:&quot;ps&quot;,&quot;duration&quot;:3}]</getInRangeDriversResult></getInRangeDriversResponse></s:Body></s:Envelope>
