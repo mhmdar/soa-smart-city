@@ -21,9 +21,9 @@ namespace ParkingLotAtomic.Controllers
         }
         [HttpGet]
         [ActionName("getSlotsInRange")]
-        public HttpResponseMessage getSlotsInRange(string currentLocation, int radius)
+        public HttpResponseMessage getSlotsInRange(double longitude, double latitude, int radius)
         {
-            List<int> cost = _slotservice.GetAllSlotsinRange(currentLocation, radius);
+            List<int> cost = _slotservice.GetAllSlotsinRange(longitude.ToString(), radius);
             var jsonObj = new JavaScriptSerializer().Serialize(cost);
 
             return new HttpResponseMessage() { StatusCode = HttpStatusCode.OK, Content = new StringContent(jsonObj) };

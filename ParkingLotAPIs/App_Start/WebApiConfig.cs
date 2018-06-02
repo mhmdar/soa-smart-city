@@ -19,6 +19,7 @@ namespace ParkingLotAPIs
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
         }
     }
 }
