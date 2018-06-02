@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OCR VER="2.0" MAXID="561">
   <PROCS>
-    <PROC OID="Process28" NAME="Test_driverPreferences" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process28" NAME="Test_driverPreferences" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter36" NAME="driverId" DESC="" TYPE="String" />
       </INBOX>
@@ -68,7 +68,7 @@
         </VIEW>
       </VIEWS>
     </PROC>
-    <PROC OID="Process123" NAME="Test_getLotRate" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process123" NAME="Test_getLotRate" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter128" NAME="lots" DESC="" TYPE="String[]" />
       </INBOX>
@@ -135,7 +135,7 @@
         </VIEW>
       </VIEWS>
     </PROC>
-    <PROC OID="Process214" NAME="Test_getAvailableLots" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process214" NAME="Test_getAvailableLots" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter219" NAME="allLots" DESC="" TYPE="String[]" />
       </INBOX>
@@ -202,7 +202,7 @@
         </VIEW>
       </VIEWS>
     </PROC>
-    <PROC OID="Process272" NAME="Test_getBestLotsFromGA" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process272" NAME="Test_getBestLotsFromGA" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter277" NAME="lotIds" DESC="" TYPE="String[]" />
         <PARAM OID="InboxParameter278" NAME="driverPreferences" DESC="" TYPE="dict" />
@@ -287,7 +287,7 @@
         </VIEW>
       </VIEWS>
     </PROC>
-    <PROC OID="Process308" NAME="Composition" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process308" NAME="Composition" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter356" NAME="longitude" DESC="" TYPE="double" />
         <PARAM OID="InboxParameter358" NAME="radius" DESC="" TYPE="String" />
@@ -475,7 +475,7 @@
         </VIEW>
       </VIEWS>
     </PROC>
-    <PROC OID="Process480" NAME="Test_getLocationInfo" DESC="Automatically generated test process for getLocationInfo" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process480" NAME="Test_getLocationInfo" DESC="Automatically generated test process for getLocationInfo" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter485" NAME="longitude" DESC="" TYPE="double" />
         <PARAM OID="InboxParameter486" NAME="latitude" DESC="" TYPE="double" />
@@ -543,7 +543,7 @@
         </VIEW>
       </VIEWS>
     </PROC>
-    <PROC OID="Process534" NAME="Test_getLotsInRange" DESC="Automatically generated test process for getLotsInRange" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
+    <PROC OID="Process534" NAME="Test_getLotsInRange" DESC="Automatically generated test process for getLotsInRange" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" PUBLISHED="true" SUBPROC="false" FLOWCONTROL="false">
       <INBOX>
         <PARAM OID="InboxParameter539" NAME="longitude" DESC="" TYPE="double" />
         <PARAM OID="InboxParameter540" NAME="radius" DESC="" TYPE="int" />
@@ -622,7 +622,7 @@
     </PROC>
   </PROCS>
   <PROGRAMS>
-    <PROGRAM OID="Program1" NAME="getDriverPreferences" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+    <PROGRAM OID="Program1" NAME="getDriverPreferences" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
         <PARAM OID="InboxParameter35" NAME="driverId" DESC="" TYPE="String" />
       </INBOX>
@@ -649,7 +649,7 @@
         </METHOD>
       </ACCESS>
     </PROGRAM>
-    <PROGRAM OID="Program47" NAME="getLotsInRange" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+    <PROGRAM OID="Program47" NAME="getLotsInRange" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
         <PARAM OID="InboxParameter48" NAME="longitude" DESC="" TYPE="double" />
         <PARAM OID="InboxParameter49" NAME="radius" DESC="" TYPE="int" />
@@ -678,7 +678,7 @@
         </METHOD>
       </ACCESS>
     </PROGRAM>
-    <PROGRAM OID="Program97" NAME="getLotRate" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+    <PROGRAM OID="Program97" NAME="getLotRate" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
         <PARAM OID="InboxParameter98" NAME="lots" DESC="" TYPE="String[]" />
       </INBOX>
@@ -705,7 +705,7 @@
         </METHOD>
       </ACCESS>
     </PROGRAM>
-    <PROGRAM OID="Program188" NAME="getAvailableLots" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+    <PROGRAM OID="Program188" NAME="getAvailableLots" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
         <PARAM OID="InboxParameter189" NAME="allLots" DESC="" TYPE="String[]" />
       </INBOX>
@@ -732,7 +732,7 @@
         </METHOD>
       </ACCESS>
     </PROGRAM>
-    <PROGRAM OID="Program245" NAME="getBestLotsFromGA" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+    <PROGRAM OID="Program245" NAME="getBestLotsFromGA" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
         <PARAM OID="InboxParameter246" NAME="lotIds" DESC="" TYPE="String[]" />
         <PARAM OID="InboxParameter247" NAME="lotRates" DESC="" TYPE="int[]" />
@@ -762,7 +762,7 @@
         </METHOD>
       </ACCESS>
     </PROGRAM>
-    <PROGRAM OID="Program458" NAME="SOAP_getLocationInfo" DESC="" AUTHOR="" VERSION="" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
+    <PROGRAM OID="Program458" NAME="SOAP_getLocationInfo" DESC="" AUTHOR="" VERSION="1.0" VERSIONSTATUS="Stable" CACHELIFETIME="0" ABSTRACT="false" SIZE="0" RESTART="0">
       <INBOX>
         <PARAM OID="InboxParameter459" NAME="long" DESC="" TYPE="double" />
         <PARAM OID="InboxParameter460" NAME="lat" DESC="" TYPE="double" />
@@ -793,4 +793,3 @@
     </PROGRAM>
   </PROGRAMS>
 </OCR>
-
