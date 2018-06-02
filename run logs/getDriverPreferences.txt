@@ -1,0 +1,45 @@
+{parking_v10}Test_driverPreferences[1.0].0.0:1:driverId,1
+{parking_v10}Test_driverPreferences[1.0].0.0:2:driverPreferences,null
+{parking_v10}Test_driverPreferences[1.0].0.0:0:CALLER,null
+{parking_v10}Test_driverPreferences[1.0].0.0:0:delete_on_finish,null
+{parking_v10}Test_driverPreferences[1.0].0.0:0:ENDDT,2018-06-03 24:54:52.038
+{parking_v10}Test_driverPreferences[1.0].0.0:0:Finalized,Yes
+{parking_v10}Test_driverPreferences[1.0].0.0:0:READYDT,2018-06-03 24:54:50.914
+{parking_v10}Test_driverPreferences[1.0].0.0:0:START,1
+{parking_v10}Test_driverPreferences[1.0].0.0:0:STARTDT,2018-06-03 24:54:50.915
+{parking_v10}Test_driverPreferences[1.0].0.0:0:STATE,4
+{parking_v10}Test_driverPreferences[1.0].0.0:0:SuspendAfterCreation,null
+{parking_v10}Test_driverPreferences[1.0].0.0:0:WALL,1.124
+{parking_v10}Test_driverPreferences[1.0].0.0:5:Response,{"Language":"En","Currency":"NIS","Name":"Hamoudeh","CarId":"12313","CurrentLocation":"32.12312:33.123131","ParkingType":"N","Date":"6/2/2018","Time":"14:54:52.0006672","Level":"8","maxCost":"19","Duration":"106"}
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:1:driverId,1
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:2:driverPreferences,null
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:ENDDT,2018-06-03 24:54:52.037
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:HOST,127.0.1.1
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:NAME,getDriverPreferences
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:PROGNAME,{parking_v10}getDriverPreferences[1.0]
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:READYDT,2018-06-03 24:54:50.915
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:RESTART,null
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:START,1
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:STARTDT,2018-06-03 24:54:50.918
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:STATE,4
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:TYPE,ACTY
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:0:WALL,1.122
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:4:AM,HTTPAdapter
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:4:method,GET
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:4:urlstring,http://marwantushyeh-001-site1.itempurl.com/api/Driver/GetDriverPreferences?driverId=1
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:5:errormsg,OK
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:5:headout,null:[HTTP/1.1 200 OK]
+Server:[Microsoft-IIS/8.5]
+Cache-Control:[no-cache]
+Connection:[keep-alive]
+X-AspNet-Version:[4.0.30319]
+Expires:[-1]
+Pragma:[no-cache]
+Content-Length:[213]
+Date:[Sat, 02 Jun 2018 21:54:51 GMT]
+X-Powered-By:[ASP.NET]
+Content-Type:[text/plain; charset=utf-8]
+
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:5:page,{"Language":"En","Currency":"NIS","Name":"Hamoudeh","CarId":"12313","CurrentLocation":"32.12312:33.123131","ParkingType":"N","Date":"6/2/2018","Time":"14:54:52.0006672","Level":"8","maxCost":"19","Duration":"106"}
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:5:responseheaders,{null=[HTTP/1.1 200 OK], Server=[Microsoft-IIS/8.5], Cache-Control=[no-cache], Connection=[keep-alive], X-AspNet-Version=[4.0.30319], Expires=[-1], Pragma=[no-cache], Content-Length=[213], Date=[Sat, 02 Jun 2018 21:54:51 GMT], X-Powered-By=[ASP.NET], Content-Type=[text/plain; charset=utf-8]}
+{parking_v10}Test_driverPreferences[1.0].getDriverPreferences.0:5:status,200
